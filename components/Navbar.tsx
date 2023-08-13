@@ -35,18 +35,17 @@ const Navbar = () => {
     }
 
     return ( 
-        <main className='fixed z-10 w-full bg-main-black'>
-            <nav className="w-[85%] h-[75px] bg-main-black z-10 flex justify-between items-center pt-2 mx-auto">
-                <div className="">
-                        <Image
-                            src="/hebratech_logo.png"
-                            alt='hebratech logo'
-                            className='object-contain'
-                            width={40}
-                            height={16}
-                        />
-                </div>
-    253
+        <main className='fixed z-10 w-full'>
+            <nav className="w-[85%] h-[75px] flex justify-between items-center pt-2 mx-auto">
+                <Image
+                    src="/hebratech_logo.png"
+                    alt='hebratech logo'
+                    className='object-contain'
+                    width={40}
+                    height={16}
+                />
+
+                
                 <div className='lg:hidden flex h-[40%] flex-col items-center justify-between cursor-pointer z-20' onClick={handleClick}>
                     <div className={`burger-menu ${menuIsOpen ? 'rotate-45 h-[.25em] w-[2.4em] translate-y-[0.33rem]' : 'burger-menu-lines'}`}/>
                     <div className={`burger-menu ${menuIsOpen ? '' : 'burger-menu-lines'}`}/>
