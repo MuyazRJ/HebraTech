@@ -1,27 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost&family=Montserrat:wght@400;600&display=swap');
+
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: -0.05em;
+  max-width:100%; 
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+.circle {
+  @apply bg-[#424343] rounded-full flex items-center justify-center w-8 h-8; 
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.arrow {
+  @apply absolute w-2 h-2 border-solid border-2 border-l-0 border-t-0 -rotate-45 border-[#FFB800] rounded-[1px] ml-[4px];
+}
+
+.burger-menu {
+  @apply bg-white rounded-[0.3em] duration-[400ms];
+}
+
+.burger-menu-text {
+  @apply text-white hover:text-blue-300 text-3xl cursor-pointer;
+}
+
+.burger-menu-lines {
+  @apply h-[.35em] w-[2.5em];
+}
+
+.statistics-text {
+  @apply flex-1 text-2xl text-[26px] font-semibold tracking-tight;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.stats-p {
+  @apply mt-10 text-lg font-bold bg-gradient-to-r from-[#DD9E48] via-[#e0a758] via-[#e7bc80] to-[#DD9E48];
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
