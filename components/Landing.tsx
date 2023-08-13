@@ -31,7 +31,7 @@ const Landing = ({ doneLoading }: { doneLoading: boolean}) => {
             y:40,
             opacity: 0,
             transition: {
-                duration: 0.2
+                duration: 0.3
             }
         }
     }
@@ -40,7 +40,7 @@ const Landing = ({ doneLoading }: { doneLoading: boolean}) => {
         <>
             <motion.div key="landing" className="w-full h-[100vh] absolute bg-main-black origin-top" initial={{scaleY:0}} animate={{scaleY:1}} transition={{duration:1, ease:[0.99, 0, 0.17, 1], delay: 0.3}}>
                 <div className="flex flex-col w-full h-full">
-                    <div className="max-w-[85%] flex flex-col mt-[9rem] mx-auto">
+                    <div className="max-w-[85%] flex flex-col mt-[7rem] mx-auto">
                         <h1 className="text-white text-[2.7rem] leading-[3.4rem] font-bold tracking-tight">Revolutionising Computers</h1>
                         <p className="text-[#C3C3C3] mt-6 text-md font-bold">Introducing the next revolution in technology: computing and communications using quantum particles.</p>
                         <span><CustomButton></CustomButton></span>
