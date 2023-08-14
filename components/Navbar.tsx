@@ -52,7 +52,7 @@ const Navbar = () => {
                     <div className={`burger-menu ${menuIsOpen ? 'rotate-[-45deg] h-[.25em] w-[2.4em] translate-y-[-1.1rem]' : 'burger-menu-lines'}`}/>
                 </div>
 
-           
+                <AnimatePresence mode='wait'>
                     {menuIsOpen && (
                         <motion.div key="b-menu" className='absolute h-screen w-screen bg-main-black inset-0 flex justify-center items-center flex-col gap-6 top-0' variants={menuAnim} initial="initial" animate="animate" exit="exit">
                             <span className='burger-menu-text'>Home</span>
@@ -60,7 +60,7 @@ const Navbar = () => {
                             <span className='burger-menu-text'>About Us</span>
                         </motion.div>
                     )}
-             
+                </AnimatePresence>
             </nav>
         </main>
      );
