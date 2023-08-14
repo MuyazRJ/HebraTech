@@ -47,16 +47,16 @@ const Landing = ({ doneLoading }: { doneLoading: boolean}) => {
                         <span><CustomButton/></span>
 
                         <div className="flex mt-14">
-                            <h3  className={`statistics-text relative before:absolute before:border-r-[1px] before:inset-0 before:top-[20%] before:h-[60%] before:border-gray-400 before:right-[10%] `}>50+<br/>Years</h3>
-                            <h3  className={`statistics-text text-center `}>$3.4<br/>Trillion</h3>
-                            <h3  className={`statistics-text text-right relative before:absolute before:border-l-[1px] before:inset-0 before:top-[20%] before:h-[60%] before:border-gray-400 before:left-[10%] `}>50+<br/>Years</h3>
+                            <h3 onClick={() => setStat(0)} className={`statistics-text relative before:absolute before:border-r-[1px] before:inset-0 before:top-[20%] before:h-[60%] before:border-gray-400 before:right-[10%] ${gradientColour(0)}`}>50+<br/>Years</h3>
+                            <h3 onClick={() => setStat(1)} className={`statistics-text text-center ${gradientColour(1)}`}>$3.4<br/>Trillion</h3>
+                            <h3 onClick={() => setStat(2)} className={`statistics-text text-right relative before:absolute before:border-l-[1px] before:inset-0 before:top-[20%] before:h-[60%] before:border-gray-400 before:left-[10%] ${gradientColour(2)}`}>50+<br/>Years</h3>
                         </div>
 
-                        <AnimatePresence mode="wait">
-                            {selectedStat === 0 && <motion.p key={1} variants={statsAnim} initial="initial" animate="animation" exit="exit" className="stats-p">Lorem ipsum, dolor sit amet consectetur adipisicing elit</motion.p>}
-                            {selectedStat === 1 && <motion.p key={2} variants={statsAnim} initial="initial" animate="animation" exit="exit" className="stats-p">Ipsam eum consequuntur distinctio saepe provident corporis porro quasi facilis reiciendis officia dolores inventore!</motion.p>}
-                            {selectedStat === 2 && <motion.p key={3} variants={statsAnim} initial="initial" animate="animation" exit="exit" className="stats-p">Combined estimated market values for the top 10 applications of the first two versions of our Tech Device.</motion.p>}
-                        </AnimatePresence>
+                        
+                        {selectedStat === 0 && <motion.p key={1} variants={statsAnim} initial="initial" animate="animation" exit="exit" className="stats-p">Lorem ipsum, dolor sit amet consectetur adipisicing elit</motion.p>}
+                        {selectedStat === 1 && <motion.p key={2} variants={statsAnim} initial="initial" animate="animation" exit="exit" className="stats-p">Ipsam eum consequuntur distinctio saepe provident corporis porro quasi facilis reiciendis officia dolores inventore!</motion.p>}
+                        {selectedStat === 2 && <motion.p key={3} variants={statsAnim} initial="initial" animate="animation" exit="exit" className="stats-p">Combined estimated market values for the top 10 applications of the first two versions of our Tech Device.</motion.p>}
+                      
                     </div>
                 </div>
             </motion.div>

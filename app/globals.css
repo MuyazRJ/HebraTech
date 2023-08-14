@@ -47,6 +47,6 @@
 }
 
 .circle-glow {
-  @apply rounded-full w-[1px] h-[1px] mr-8 absolute;
-
+  @apply rounded-full w-[1px] h-[1px] mr-8 absolute overflow-hidden;
+  box-shadow: 0 0 13.5em 4.2em #FFB800;
 }

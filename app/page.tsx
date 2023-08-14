@@ -20,11 +20,11 @@ export default function Home() {
 
   return (
     <main className='overflow-hidden'>
-        <AnimatePresence mode="wait">
+        
           <Navbar/>
           {<Preloader key="preloader" loading={loading} doneLoading={doneLoading}/>}
           {!loading && <Landing key="landing" doneLoading={doneLoading}/>}
-        </AnimatePresence>
+      
     </main>
   )
 }
