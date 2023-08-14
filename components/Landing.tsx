@@ -42,7 +42,7 @@ const Landing = ({ doneLoading }: { doneLoading: boolean}) => {
         <>
             <motion.div key="landing" className="w-full h-full absolute bg-main-black origin-top -z-10 overflow-x-hidden" initial={{scaleY:0}} animate={{scaleY:1}} transition={{duration:1, ease:[0.99, 0, 0.17, 1], delay: 0.3}}>
                 <div className="circle-glow"></div>
-                <Lottie autoPlay={true} loop={true} animationData={animationData} className="absolute w-[176%] h-[76%] -z-[1]"/>
+                <Lottie autoPlay={true} loop={true} animationData={animationData} className="bottom-[32%] absolute w-[690px] h-[640px] -z-[1]"/>
                 <div className="flex flex-col w-full h-full">
                     <div className="max-w-[85%] flex flex-col mt-[7rem] mx-auto">
                         <h1 className="text-white text-[2.7rem] leading-[3.4rem] font-bold tracking-tight">Revolutionising Computers</h1>
