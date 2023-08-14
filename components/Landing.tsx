@@ -4,7 +4,7 @@ import { motion, AnimatePresence } from "framer-motion"
 import { CustomButton } from ".";
 import { useState } from "react";
 import Lottie, { LottieRefCurrentProps } from "lottie-react";
-import animationData  from '../animations/data.json'
+import animationData  from '../animations/orbit.json'
 
 const Landing = ({ doneLoading }: { doneLoading: boolean}) => {
     const [selectedStat, setStat] = useState(0)
@@ -46,7 +46,7 @@ const Landing = ({ doneLoading }: { doneLoading: boolean}) => {
                 <div className="flex flex-col w-full h-full">
                     <div className="max-w-[85%] flex flex-col mt-[7rem] mx-auto">
                         <h1 className="text-white text-[2.7rem] leading-[3.4rem] font-bold tracking-tight">Revolutionising Computers</h1>
-                        <p className="text-[#C3C3C3] mt-10 text-md font-bold">Introducing the next revolution in technology: computing and communications using quantum particles.</p>
+                        <p className="text-[#C3C3C3] mt-6 text-md font-bold">Introducing the next revolution in technology: computing and communications using quantum particles.</p>
                         <span><CustomButton/></span>
 
                         <div className="flex mt-14">
