@@ -35,7 +35,7 @@ const Navbar = () => {
     }
 
     return ( 
-        <main className='fixed z-10 w-full'>
+        <main className='absolute z-10 w-full'>
             <nav className="w-[85%] h-[75px] flex justify-between items-center pt-2 mx-auto">
                 <Image
                     src="/hebratech_logo.png"

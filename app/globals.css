@@ -40,7 +40,7 @@
 }
 
 .stats-p {
-  @apply mt-10 text-lg font-bold bg-gradient-to-r from-[#DD9E48] via-[#e0a758] via-[#e7bc80] to-[#DD9E48];
+  @apply mt-10 text-lg font-bold bg-gradient-to-r from-[#DD9E48] via-[#e0a758] via-[#e7bc80] to-[#DD9E48] h-[140px];
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }

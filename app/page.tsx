@@ -15,7 +15,7 @@ export default function Home() {
 
     setTimeout(() => {
       isDoneLoading(true)
-    }, 3000)
+    }, 2000)
   }, 2000)
 
   return (
@@ -26,7 +26,7 @@ export default function Home() {
           {!loading && <Landing key="landing" doneLoading={doneLoading}/>}
         </AnimatePresence>
 
-      
+        {doneLoading && <Brief/>}
     </main>
   )
 }
