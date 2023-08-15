@@ -57,7 +57,7 @@ const Landing = ({ doneLoading }: { doneLoading: boolean}) => {
 
                 <AnimatePresence mode="wait">
                     {selectedStat === 0 && <motion.p key={1} variants={statsAnim} initial="initial" animate="animation" exit="exit" className="stats-p">Combined estimated market values for the top 10 applications of the first two versions of our Tech Device.</motion.p>}
-                    {selectedStat === 1 && <motion.p key={2} variants={statsAnim} initial="initial" animate="animation" exit="exit" className="stats-p">Ipsam eum consequuntur distinctio saepe provident corporis porro quasi facilis reiciendis officia dolores inventore!</motion.p>}
+                    {selectedStat === 1 && <motion.p key={2} variants={statsAnim} initial="initial" animate="animation" exit="exit" className="stats-p">Ipsam eum consequuntur distinctio saepe provident corporis porro quasi facilis reiciendis officia dolores inventors!</motion.p>}
                     {selectedStat === 2 && <motion.p key={3} variants={statsAnim} initial="initial" animate="animation" exit="exit" className="stats-p">Combined estimated market values for the top 10 applications of the first two versions of our Tech Device.</motion.p>}
                 </AnimatePresence>
             </div>
