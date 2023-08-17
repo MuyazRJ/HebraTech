@@ -1,6 +1,6 @@
 "use client"
 
-import { Landing, Navbar, Preloader, Brief, FoundersLanding } from '@/components'
+import { Landing, Navbar, Preloader, Brief, FoundersLanding, InfoLanding } from '@/components'
 import { useState } from 'react'
 import Image from 'next/image'
 
@@ -30,6 +30,7 @@ export default function Home() {
         <>
         <Brief/>
         <FoundersLanding/>
+        <InfoLanding/>
         </>
         }
     </main>

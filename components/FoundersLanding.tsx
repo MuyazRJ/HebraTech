@@ -3,12 +3,12 @@ import TextReveal from "@/motion/Reveal";
 
 const FoundersLanding = () => {
     return ( 
-        <div className="bg-main-black pt-12 h-screen">
+        <div className="bg-main-black pt-12 h-full">
             <Image
                 src="/hebratech_logo.png"
                 alt='hebratech logo'
-                className='object-contain opacity-[0.15] absolute translate-x-[-45%] mt-8'
-                width={270}
+                className='object-contain opacity-[0.15] absolute translate-x-[-45%] mt-4'
+                width={330}
                 height={270}
             />
 
@@ -17,11 +17,11 @@ const FoundersLanding = () => {
                 
                 <p className="text-[#C3C3C3]">HeBra Technologies is led by a visionary team of founders, each bringing diverse expertise to the table. Their collective knowledge in optics, mathematics, physics, and manufacturing drives groundbreaking innovations in optical computing and related technologies.</p>
 
-                <button type="button" className="radial mt-4 self-start" >
+                <button type="button" className="radial mt-8 self-start" >
                     <span className="font-bold text-sm tracking-tight text-white">SEE MORE OF THE TEAM</span>
                 </button>
 
-                <div className="founders mt-14">
+                <div className="founders mt-12">
                     <div className="founder_sections">
                         <div className="founder_images">
                             <Image
@@ -71,7 +71,7 @@ const FoundersLanding = () => {
                     <div className="founder_sections">
                         <div className="founder_images">
                             <Image
-                                src="/CHARLES_HESTER_PhD_Founder_HebraTech.png"
+                                src="/CHARIES_HESTER_PhD_Founder_HebraTech.png"
                                 alt='Founder Charles Hester'
                                 fill={true}
                                 className='object-contain'

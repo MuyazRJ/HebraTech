@@ -4,6 +4,7 @@ import CustomButton from "./CustomButton";
 import Navbar from "./Navbar";
 import Brief from "./Brief";
 import FoundersLanding from './FoundersLanding'
+import InfoLanding from './InfoLanding'
 
 export {
     Preloader,
@@ -12,5 +13,6 @@ export {
     Navbar,
     Brief,
     FoundersLanding,
-    
+    InfoLanding,
+
 }
