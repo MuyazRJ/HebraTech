@@ -1,6 +1,6 @@
 "use client"
 
-import { Landing, Navbar, Preloader, Brief } from '@/components'
+import { Landing, Navbar, Preloader, Brief, FoundersLanding } from '@/components'
 import { useState } from 'react'
 import Image from 'next/image'
 
@@ -26,7 +26,12 @@ export default function Home() {
           {!loading && <Landing key="landing" doneLoading={doneLoading}/>}
         </AnimatePresence>
 
-        {doneLoading && <Brief/>}
+        {doneLoading && 
+        <>
+        <Brief/>
+        <FoundersLanding/>
+        </>
+        }
     </main>
   )
 }
