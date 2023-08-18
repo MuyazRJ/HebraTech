@@ -5,6 +5,8 @@ import Navbar from "./Navbar";
 import Brief from "./Brief";
 import FoundersLanding from './FoundersLanding'
 import InfoLanding from './InfoLanding'
+import Contact from './Contact'
+import Footer from './Footer'
 
 export {
     Preloader,
@@ -14,5 +16,7 @@ export {
     Brief,
     FoundersLanding,
     InfoLanding,
+    Contact,
+    Footer,
 
 }

@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Jost&family=Montserrat:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jost&family=Montserrat:wght@400;500;600;700;900&display=swap');
 
 
 @tailwind base;
@@ -77,4 +77,8 @@
 
 .founder_position {
   @apply text-white font-bold text-xs text-[0.6rem] text-center;
+}
+
+.input-box {
+  @apply rounded-full h-[2.25rem] text-center bg-main-black text-white placeholder:text-white;
 }

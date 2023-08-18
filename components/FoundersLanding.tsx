@@ -7,7 +7,7 @@ const FoundersLanding = () => {
             <Image
                 src="/hebratech_logo.png"
                 alt='hebratech logo'
-                className='object-contain opacity-[0.15] absolute translate-x-[-45%] mt-4'
+                className='object-contain opacity-[0.15] absolute translate-x-[-45%] mt-4 grayscale-100'
                 width={330}
                 height={270}
             />

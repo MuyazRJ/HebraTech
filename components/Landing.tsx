@@ -45,7 +45,7 @@ const Landing = ({ doneLoading }: { doneLoading: boolean}) => {
                 <Lottie autoPlay={true} loop={true} animationData={animationData} className="w-[690px] h-[640px]"/>
             </div>
             <div className="max-w-[85%] flex flex-col mt-[7rem] mx-auto">
-                <h1 className="text-white text-[2.7rem] leading-[3.4rem] font-bold tracking-tight z-[1]">Revolutionising Computers</h1>
+                <h1 className="text-white text-[2.7rem] leading-[3.4rem] font-semibold tracking-tight z-[1]">Revolutionising Computers</h1>
                 <p className="text-[#C3C3C3] mt-6 text-md font-semibold z-[1]">Introducing the next revolution in technology: computing and communications using quantum particles.</p>
                 <span><CustomButton text="Learn More" styles="mt-12 text-md" boxShadow="0 0 7em 0 #FFB800"/></span>
                 
