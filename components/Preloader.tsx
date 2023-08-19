@@ -42,7 +42,7 @@ const Preloader = ({ loading, doneLoading }: { loading: boolean, doneLoading: bo
 
     return ( 
         <AnimatePresence mode="wait">
-            <div className={`bg-main-black h-screen w-screen absolute -z-10 ${loading ? 'bg-[#F3BF28]': 'bg-main-black'}`}>
+            <div className={`h-screen w-screen absolute -z-10 ${loading ? 'bg-[#F3BF28]': 'bg-main-black'}`}>
                 <div className="w-full h-full flex items-center">
                     <div className="overflow-y-hidden mx-auto">
                         <motion.span variants={stagger} initial="initial" animate="animate" className="flex" key="let">
