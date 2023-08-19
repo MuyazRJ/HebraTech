@@ -82,3 +82,7 @@
 .input-box {
   @apply rounded-full h-[2.25rem] text-center bg-main-black text-white placeholder:text-white;
 }
+
+.marquee {
+  @apply text-white flex-shrink-0 justify-around min-w-full gap-[1rem] animate-infiniteScroll text-8xl font-bold tracking-normal;
+}

@@ -11,7 +11,7 @@ const Footer = () => {
                     fill={true}
                 />
             </div>
-            <div className="flex w-[85%] gap-[4.5rem] mt-8 z-[1] items-center">
+            <div className="flex w-[85%] gap-[4.5rem] mt-8 z-[1] items-center justify-center">
                 <div className="flex flex-col">
                   
                 <span className="text-white mt-4">HebraTech 2023</span>

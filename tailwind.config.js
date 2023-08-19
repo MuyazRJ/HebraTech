@@ -11,6 +11,15 @@ module.exports = {
         'main-black': '#191919',
         'main-gold': '#FFB800'
       },
+      keyframes: {
+        infiniteScroll: {
+          '0%': {  transform: 'translateX(0%)' },
+          '100%': { transform: 'translateX(calc(-100% - 1rem))' },
+        }
+      },
+      animation: {
+        infiniteScroll: 'infiniteScroll 13s linear infinite'
+      }
     },
   },
   plugins: [],

@@ -11,7 +11,11 @@ const Contact = () => {
         <div className="w-full bg-[#F2F2F2] pt-8 flex flex-col items-center z-0 relative">
             <h2 className="text-[2rem] font-bold leading-[2.3rem] z-[1]">SPEAK WITH US</h2>
             <span className="font-bold text-md z-[1]">we'll get back to you</span>
-            <span className="absolute text-white text-[5.2rem] tracking-normal font-bold w-[180%] translate-y-[-35px] translate-x-[5.7rem] over">GET IN TOUCH</span>
+
+            <div className="flex gap-[1rem] w-screen absolute translate-y-[-17px]" aria-hidden="true">
+                <span className="marquee">GET IN TOUCH</span>
+                <span className="marquee">GET IN TOUCH</span>
+            </div>
 
             <form className="mt-6 flex flex-col">
                 <div className="flex justify-between gap-4">

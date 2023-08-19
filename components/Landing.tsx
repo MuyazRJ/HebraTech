@@ -52,7 +52,7 @@ const Landing = ({ doneLoading }: { doneLoading: boolean}) => {
                 <div className="flex mt-14">
                     <h3 onClick={() => setStat(0)} className={`statistics-text relative before:absolute before:border-r-[1px] before:inset-0 before:top-[20%] before:h-[60%] before:border-gray-400 before:right-[10%] ${gradientColour(0)}`}>50+<br/>Years</h3>
                     <h3 onClick={() => setStat(1)} className={`statistics-text text-center ${gradientColour(1)}`}>$3.4<br/>Trillion</h3>
-                    <h3 onClick={() => setStat(2)} className={`statistics-text text-right relative before:absolute before:border-l-[1px] before:inset-0 before:top-[20%] before:h-[60%] before:border-gray-400 before:left-[10%] ${gradientColour(2)}`}>50+<br/>Years</h3>
+                    <h3 onClick={() => setStat(2)} className={`statistics-text text-right relative before:absolute before:border-l-[1px] before:inset-0 before:top-[20%] before:h-[60%] before:border-gray-400 before:left-[10%] ${gradientColour(2)}`}>85%<br/>Ahead</h3>
                 </div>
 
                 <AnimatePresence mode="wait">

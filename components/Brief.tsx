@@ -4,7 +4,7 @@ import { CustomButton } from ".";
 
 const Brief = () => {
     return ( 
-        <div className="bg-main-black pt-[0.75rem]">
+        <div className="bg-main-black pt-2">
             <div className="flex max-w-[85%] mx-auto items-center justify-center flex-col">
                 <TextReveal>
                 <h2 className="text-white text-2xl font-semibold text-center mb-8 before:absolute relative  before:border-b-[1px] before:border-[#A3A3A3] before:w-[110%] before:right-[-5%] before:top-10 before:bottom-0 before:opacity-50">HEBRA TECHNOLOGIES</h2></TextReveal>
