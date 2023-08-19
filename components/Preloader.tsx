@@ -3,7 +3,7 @@
 import { AnimatePresence, delay, easeIn, motion } from "framer-motion"
 
 const Preloader = ({ loading, doneLoading }: { loading: boolean, doneLoading: boolean}) => {
-    const title = "Loading..."
+    const title = "HEBRA"
 
     const stagger = {
         animate: {
@@ -42,19 +42,19 @@ const Preloader = ({ loading, doneLoading }: { loading: boolean, doneLoading: bo
 
     return ( 
         <AnimatePresence mode="wait">
-            <div className="bg-main-black h-screen w-screen absolute -z-10">
-                <div className="w-full h-full flex items-center justify-center">
-                    <div className="overflow-hidden p-4">
+            <div className={`bg-main-black h-screen w-screen absolute -z-10 ${loading ? 'bg-[#F3BF28]': 'bg-main-black'}`}>
+                <div className="w-full h-full flex items-center">
+                    <div className="overflow-y-hidden mx-auto">
                         <motion.span variants={stagger} initial="initial" animate="animate" className="flex" key="let">
                             {Array.from(title).map((letter, index) => (
-                                <motion.span key={index} variants={letterAnimation} className={`text-white text-8xl ${loading ? 'flex': 'hidden'}`} >{letter}</motion.span>
+                                <motion.span key={index} variants={letterAnimation} className={`font-semibold text-[6.4rem] tracking-normal ${loading ? 'text-black': 'text-[#F3BF28]'}`} >{letter}</motion.span>
                             ))}
                         </motion.span>
                     </div>
                 </div>
             </div>
 
-            {!loading && <motion.div className="fixed bg-white h-screen w-screen -z-10" variants={enter} initial='initial' animate='animate'/>}
+            {!loading && <motion.div className="fixed bg-[#F3BF28] h-screen w-screen -z-10" variants={enter} initial='initial' animate='animate'/>}
             {!loading && <motion.div className="fixed bg-main-black h-screen w-screen -z-10" variants={enter} initial='initial' animate={{y:0, transition:{duration:0.85, ease:[0.99, 0, 0.17, 1], delay:0.6}}}/>}
         </AnimatePresence>
      );
