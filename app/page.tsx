@@ -18,7 +18,7 @@ export default function Home() {
         isDoneLoading(true)
       }, 1000)
     }, 1350)
-  }, 2000)
+  }, 5000)
 
   return (
     <main className='overflow-hidden'>

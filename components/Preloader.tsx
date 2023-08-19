@@ -42,7 +42,7 @@ const Preloader = ({ loading, doneLoading }: { loading: boolean, doneLoading: bo
 
     return ( 
         <>
-            <div className={`h-screen w-screen absolute -z-10 ${loading ? 'bg-[#F3BF28]': 'bg-main-black'}`}>
+            <div className={`h-screen w-screen absolute -z-10 duration-[400ms] ${loading ? 'bg-[#F3BF28]': 'bg-main-black'}`}>
                 <div className="w-full h-full flex items-center">
                     <div className="overflow-y-hidden mx-auto">
                         <motion.span variants={stagger} initial="initial" animate="animate" className="flex relative pb-20" key="let">
