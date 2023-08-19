@@ -13,12 +13,12 @@ const FoundersLanding = () => {
             />
 
             <div className="flex max-w-[85%] mx-auto items-center justify-center flex-col">
-                <TextReveal><h2 className="text-white text-2xl font-bold text-center mb-8 before:absolute relative before:border-b-[1px] before:border-[#A3A3A3] before:w-[110%] before:right-[-5%] before:top-10 before:bottom-0 before:opacity-50">MEET OUR FOUNDERS</h2></TextReveal>
+                <TextReveal><h2 className="text-white text-2xl font-semibold text-center mb-8 before:absolute relative before:border-b-[1px] before:border-[#A3A3A3] before:w-[110%] before:right-[-5%] before:top-10 before:bottom-0 before:opacity-50">MEET OUR FOUNDERS</h2></TextReveal>
                 
                 <p className="text-[#C3C3C3]">HeBra Technologies is led by a visionary team of founders, each bringing diverse expertise to the table. Their collective knowledge in optics, mathematics, physics, and manufacturing drives groundbreaking innovations in optical computing and related technologies.</p>
 
                 <button type="button" className="radial mt-8 self-start" >
-                    <span className="font-bold text-sm tracking-tight text-white">SEE MORE OF THE TEAM</span>
+                    <span className="font-semibold text-sm tracking-tight text-white">SEE MORE OF THE TEAM</span>
                 </button>
 
                 <div className="founders mt-12">

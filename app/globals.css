@@ -72,11 +72,11 @@
 }
 
 .founder_name {
-  @apply text-white justify-self-end font-bold text-lg mt-2 text-center;
+  @apply text-white justify-self-end font-semibold text-lg mt-2 text-center;
 }
 
 .founder_position {
-  @apply text-white font-bold text-xs text-[0.6rem] text-center;
+  @apply text-white font-semibold text-xs text-[0.6rem] text-center;
 }
 
 .input-box {

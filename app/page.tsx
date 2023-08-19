@@ -2,9 +2,6 @@
 
 import { Landing, Navbar, Preloader, Brief, FoundersLanding, InfoLanding, Contact, Footer } from '@/components'
 import { useState } from 'react'
-import Image from 'next/image'
-
-import { AnimatePresence } from "framer-motion"
 
 export default function Home() {
   const [loading, isLoading] = useState(true)
