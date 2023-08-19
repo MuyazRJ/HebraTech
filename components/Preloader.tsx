@@ -1,6 +1,6 @@
 "use client"
 
-import { motion } from "framer-motion"
+import { AnimatePresence, delay, easeIn, motion } from "framer-motion"
 
 const Preloader = ({ loading, doneLoading }: { loading: boolean, doneLoading: boolean}) => {
     const title = "Loading..."
@@ -27,9 +27,22 @@ const Preloader = ({ loading, doneLoading }: { loading: boolean, doneLoading: bo
         }
     }
 
+    const enter = {
+        initial:{
+            y:'-100%'
+        },
+        animate: {
+            y:0,
+            transition: {
+                duration: 0.85, ease:[0.99, 0, 0.17, 1],
+                delay: 0.3
+            }
+        }
+    }
+
     return ( 
-        <>
-            <div className={`bg-main-black h-screen w-screen -z-20 ${doneLoading ? 'hidden': 'absolute'}`}>
+        <AnimatePresence mode="wait">
+            <div className="bg-main-black h-screen w-screen absolute -z-10">
                 <div className="w-full h-full flex items-center justify-center">
                     <div className="overflow-hidden p-4">
                         <motion.span variants={stagger} initial="initial" animate="animate" className="flex" key="let">
@@ -40,7 +53,10 @@ const Preloader = ({ loading, doneLoading }: { loading: boolean, doneLoading: bo
                     </div>
                 </div>
             </div>
-        </>
+
+            {!loading && <motion.div className="fixed bg-white h-screen w-screen -z-10" variants={enter} initial='initial' animate='animate'/>}
+            {!loading && <motion.div className="fixed bg-main-black h-screen w-screen -z-10" variants={enter} initial='initial' animate={{y:0, transition:{duration:0.85, ease:[0.99, 0, 0.17, 1], delay:0.6}}}/>}
+        </AnimatePresence>
      );
 }
  

@@ -39,7 +39,7 @@ const Landing = ({ doneLoading }: { doneLoading: boolean}) => {
     }
 
     return ( 
-        <motion.div key="landing" className="bg-main-black overflow-hidden origin-top relative" initial={{opacity:0}} animate={{opacity:1}} transition={{duration:1, ease:[0.99, 0, 0.17, 1], delay: 2}}>
+        <motion.div key="landing" className="bg-main-black overflow-hidden origin-top relative" initial={{opacity:0}} animate={{opacity:1}} transition={{duration:.75}}>
             <div className="circle-glow z-[1]"></div>
             <div className="absolute top-0 left-0 translate-y-[-175px] translate-x-4">
                 <Lottie autoPlay={true} loop={true} animationData={animationData} className="w-[690px] h-[640px]"/>

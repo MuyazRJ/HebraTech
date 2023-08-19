@@ -3,7 +3,7 @@ import Image from "next/image";
 const Footer = () => {
     return ( 
         <div className="bg-main-black w-full pb-10 flex justify-center relative">
-            <div className="absolute w-[270px] h-[270px] left-0 translate-x-[-70px] opacity-40">
+            <div className="absolute w-[270px] h-[270px] left-0 translate-x-[-70px] opacity-50">
                 <Image
                     src="/footer_logo.png"
                     alt='hebratech logo'
@@ -11,7 +11,7 @@ const Footer = () => {
                     fill={true}
                 />
             </div>
-            <div className="flex w-[85%] justify-between mt-8 z-[1] items-center">
+            <div className="flex w-[85%] gap-[4.5rem] mt-8 z-[1] items-center">
                 <div className="flex flex-col">
                   
                 <span className="text-white mt-4">HebraTech 2023</span>
