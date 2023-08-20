@@ -2,7 +2,7 @@
 
 import { AnimatePresence, delay, easeIn, motion } from "framer-motion"
 
-const Preloader = ({ loading, doneLoading }: { loading: boolean, doneLoading: boolean}) => {
+const Preloader = ({ loading }: { loading: boolean }) => {
     const title = "HEBRA"
 
     const stagger = {

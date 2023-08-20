@@ -22,12 +22,12 @@ export default function Home() {
 
   return (
     <main className='overflow-hidden'>
-        {!doneLoading && <Preloader key="preloader" loading={loading} doneLoading={doneLoading}/>}
+        {!doneLoading && <Preloader key="preloader" loading={loading}/>}
         
         {enterLanding && 
         <>
         <Navbar/>
-        <Landing key="landing" doneLoading={doneLoading}/>
+        <Landing key="landing"/>
         <Brief/>
         <FoundersLanding/>
         <InfoLanding/>

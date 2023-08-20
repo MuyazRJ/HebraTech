@@ -10,7 +10,6 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'Montserrat', sans-serif;
-  letter-spacing: -0.05em;
 }
 
 .circle {
@@ -34,20 +33,30 @@
 }
 
 .statistics-text {
-  @apply flex-1 text-2xl text-[26px] font-semibold tracking-tight;
+  @apply flex-1 text-2xl text-[26px] md:text-[29px] lg:text-[2rem] font-semibold tracking-tight;
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .stats-p {
-  @apply mt-10 text-lg font-bold bg-gradient-to-r from-[#DD9E48] via-[#e0a758] via-[#e7bc80] to-[#DD9E48] h-[140px];
+  @apply mt-10 md:mt-12 text-lg md:text-[1.2rem] font-bold bg-gradient-to-r from-[#DD9E48] via-[#e0a758] via-[#e7bc80] to-[#DD9E48] h-[140px] md:w-[77%] md:self-center z-[1] max-w-[750px];
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .circle-glow {
-  @apply rounded-full w-[1px] h-[1px] mr-8 absolute overflow-hidden;
+  @apply rounded-full w-[1px] h-[1px] mr-8 absolute overflow-hidden lg:hidden;
   box-shadow: 0 0 13.5em 4.2em #FFB800;
+}
+
+.circle-glow-large-left {
+  @apply rounded-full w-[1px] h-[1px] mr-8 overflow-hidden bg-transparent translate-x-[80px] translate-y-12 lg:absolute hidden lg:block;
+  box-shadow: 0 0 15em 4em #FFB800;
+}
+
+.circle-glow-large {
+  @apply rounded-full w-[1px] h-[1px] mr-8 absolute overflow-hidden;
+  box-shadow: 0 0 15.5em 3.8em #FFB800;
 }
 
 .radial {
@@ -85,4 +94,8 @@
 
 .marquee {
   @apply text-white flex-shrink-0 justify-around min-w-full gap-[1rem] animate-infiniteScroll text-8xl font-bold tracking-normal;
+}
+
+.nav-button {
+  @apply text-white;
 }
