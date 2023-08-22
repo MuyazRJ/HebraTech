@@ -19,6 +19,9 @@ module.exports = {
       },
       animation: {
         infiniteScroll: 'infiniteScroll 13s linear infinite'
+      },
+      screens: {
+        '3xl': '1720px',
       }
     },
   },

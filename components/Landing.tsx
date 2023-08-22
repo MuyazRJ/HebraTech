@@ -39,18 +39,18 @@ const Landing = () => {
     }
 
     return ( 
-        <motion.div key="landing" className="bg-main-black overflow-hidden origin-top relative pt-10" initial={{opacity:0}} animate={{opacity:1}} transition={{duration:.75}}>
+        <motion.div key="landing" className="bg-main-black overflow-hidden origin-top relative xl:pt-10" initial={{opacity:0}} animate={{opacity:1}} transition={{duration:.75}}>
             <div className="relative mx-auto max-w-[1920px]">
 
                 <div className="circle-glow z-[1]"></div>
-                <div className="circle-glow-large-left z-[1]"/>
-                <div className="circle-glow-large z-[1] right-0 translate-x-[-255px] translate-y-[55px] lg:block hidden"></div>
+                <div className="circle-glow-large z-[1] right-0 translate-x-[-255px] translate-y-[55px] lg:block hidden 2xl:translate-x-[-365px] 2xl:translate-y-[100px]"></div>
 
-                <div className="absolute top-0 translate-y-[-290px] translate-x-4 sm:translate-x-[20%] sm:right-0 md:translate-y-[-385px] lg:translate-y-[-420px] xl:translate-y-[-480px] 2xl:sm:translate-x-[15%]">
+                <div className="absolute top-0 translate-y-[-290px] translate-x-4 sm:translate-x-[20%] sm:right-0 md:translate-y-[-385px] lg:translate-y-[-420px] xl:translate-y-[-480px] 2xl:translate-x-[15%]">
                     <Lottie autoPlay={true} loop={true} animationData={animationData} className="w-[690px] h-[640px] md:w-[800px] md:h-auto lg:w-[930px] xl:w-[1100px] 2xl:w-[1200px]"/>
                 </div>
 
-                <div className="w-[75%] flex flex-col mt-[7rem] mx-auto lg:mt-[9.5rem]">
+                <div className="w-[85%] 3xl:w-[75%] flex flex-col mt-[7rem] mx-auto lg:mt-[9.5rem]">
+                    <div className="circle-glow-large-left z-[1] xl:translate-x-[20px] xl:translate-y-[-120px] lg:translate-x-0"/>
                     <h1 className="text-white text-[2.7rem] leading-[3.4rem] font-semibold tracking-tight z-[1] md:text-[3.2rem] md:tracking-normal lg:text-6xl lg:text-[4.1rem] lg:w-[77%] xl:text-[4.7rem] xl:w-[85%] 2xl:text-[5.7rem]">Revolutionising<br/>Computers</h1>
                     <p className="text-[#C3C3C3] mt-6 text-md font-semibold z-[1] md:w-[600px] md:text-lg xl:text-xl lg:mt-10 2xl:mt-12">Introducing the next revolution in technology: computing and communications using quantum particles.</p>
                     <span><CustomButton text="Learn More" styles="mt-12 lg:hidden" boxShadow="0 0 7em 0 #FFB800"/></span>

@@ -4,7 +4,7 @@ import Image from "next/image";
 const InfoLanding = () => {
     return ( 
         <div className="bg-main-black pt-12 h-full flex flex-col items-center pb-10">
-            <div className="mt-4 w-[75%] mb-10" style={{borderBottom: '2px solid rgba(255, 255, 255, .75)'}}/>
+            <div className="mt-4 w-[75%] z-[1] mb-10" style={{borderBottom: '2px solid rgba(255, 255, 255, .75)'}}/>
             <div className="flex flex-col items-center max-w-[85%]">
                 <Image
                     src="/filler.png"

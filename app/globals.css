@@ -55,8 +55,8 @@
 }
 
 .circle-glow-large {
-  @apply rounded-full w-[1px] h-[1px] mr-8 absolute overflow-hidden;
-  box-shadow: 0 0 15.5em 3.8em #FFB800;
+  @apply rounded-full w-[2px] h-[1px] mr-8 absolute overflow-hidden;
+  box-shadow: 0 0 17.5em 3.9em #FFB800;
 }
 
 .radial {
@@ -69,11 +69,11 @@
 }
 
 .founders {
-  @apply flex w-full justify-between gap-4;
+  @apply flex w-full justify-between gap-4 lg:w-[600px] lg:self-end z-[1] lg:gap-0 lg:mt-6 mt-12 xl:gap-20 xl:mr-14;
 }
 
 .founder_images {
-  @apply flex-1 relative flex flex-col min-h-[105px] max-h-[105px];
+  @apply flex-1 relative flex flex-col min-h-[105px] max-h-[105px] sm:max-h-[125px] sm:min-h-[125px] md:max-h-[155px] md:min-h-[155px] lg:max-h-[175px] lg:min-h-[175px] xl:max-h-[200px] xl:min-h-[200px];
 }
 
 .founder_sections {
@@ -81,11 +81,11 @@
 }
 
 .founder_name {
-  @apply text-white justify-self-end font-semibold text-lg mt-2 text-center;
+  @apply text-white justify-self-end font-semibold text-lg mt-2 text-center lg:text-xl;
 }
 
 .founder_position {
-  @apply text-white font-semibold text-xs text-[0.6rem] text-center;
+  @apply text-white font-semibold text-xs text-[0.6rem] text-center lg:text-base;
 }
 
 .input-box {
