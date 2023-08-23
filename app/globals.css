@@ -55,7 +55,7 @@
 }
 
 .circle-glow-large {
-  @apply rounded-full w-[2px] h-[1px] mr-8 absolute overflow-hidden;
+  @apply rounded-full w-[1px] h-[1px] mr-8 absolute overflow-hidden;
   box-shadow: 0 0 17.5em 3.9em #FFB800;
 }
 
@@ -98,4 +98,48 @@
 
 .nav-button {
   @apply text-white;
+}
+
+.logo {
+  @apply absolute translate-x-[-45%] mt-4 w-[430px] h-[310px] md:h-[365px] lg:translate-x-[4.65rem] lg:w-[220px] 3xl:w-[290px] lg:translate-y-[1.85rem] xl:translate-x-[11.2rem] xl:translate-y-[7.5rem] xl:w-[260px] 2xl:translate-x-[18.8rem] 3xl:translate-x-[20.3rem] 3xl:translate-y-[10.5rem];
+}
+
+.founders_title {
+  @apply text-white xl:mb-20 lg:mb-10 text-2xl 2xl:text-8xl lg:text-7xl lg:text-[4.3rem] md:text-3xl font-semibold lg:before:hidden text-center mb-8 before:absolute relative before:border-b-[1px] before:border-[#A3A3A3] before:w-[110%] before:right-[-5%] before:top-10 before:bottom-0 before:opacity-50;
+}
+
+.info_animation {
+  @apply absolute top-0 left-0 translate-x-[-260px] translate-y-[-217px] lg:block hidden xl:translate-x-[-240px] xl:translate-y-[-235px] 3xl:translate-x-[-130px] 2xl:translate-x-[-120px];
+}
+
+.founders_section {
+  @apply flex mx-auto items-center justify-center flex-col max-w-[1600px] w-[85%];
+}
+
+.founders_button {
+  @apply radial mt-8 self-start lg:absolute lg:left-0 lg:lg:translate-y-[248px] lg:translate-x-[4rem] xl:translate-y-[298px] xl:translate-x-[7rem] 2xl:translate-x-[9rem] 3xl:translate-x-[14.8rem] 2xl:translate-y-[318px] 3xl:translate-y-[348px];
+}
+
+.founders_p {
+  @apply text-[#C3C3C3] md:text-lg z-[1] lg:absolute lg:text-base lg:w-[33%] lg:translate-y-[128px] lg:translate-x-[4rem] lg:left-0 xl:translate-y-[188px] xl:translate-x-[7rem] 2xl:text-lg 2xl:translate-x-[9rem] 2xl:w-[37%] 3xl:translate-x-[14.8rem] 2xl:translate-y-[190px] 3xl:translate-y-[210px];
+}
+
+.founders_bg {
+  @apply bg-main-black pt-12 lg:pt-20 h-full relative lg:pb-10;
+}
+
+.info_p {
+  @apply text-[#C3C3C3] mt-4 w-[100%] md:text-lg lg:text-base 3xl:text-lg;
+}
+
+.info_t {
+  @apply text-white font-semibold text-xl mt-6 md:text-2xl lg:text-2xl lg:self-start mb-2 3xl:text-3xl;
+}
+
+.info_s {
+  @apply font-semibold text-base tracking-tight text-white md:text-lg;
+}
+
+.info_container {
+  @apply flex flex-col items-center max-w-[85%] before:inset-0 before:h-[17rem] before:border-l-[1px] before:border-white before:absolute relative before:top-[11rem] before:translate-x-[-32px] before:hidden lg:before:block xl:before:top-[14rem] 3xl:before:h-[16.9rem] 3xl:before:top-[16.1rem] 2xl:before:top-[13.5rem];
 }
