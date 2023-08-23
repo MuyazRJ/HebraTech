@@ -10,7 +10,7 @@ const InfoLanding = () => {
         <div className="bg-main-black xl:pt-20 pt-8 h-full items-center pb-20">
             <div className="mt-4 w-[75%] z-[1] mb-10 mx-auto lg:hidden" style={{borderBottom: '2px solid rgba(255, 255, 255, .75)'}}/>
 
-            <div className="mx-auto flex-col items-center justify-center flex lg:flex-row lg:w-[85%] lg:gap-[6rem] max-w-[1600px]">
+            <div className="mx-auto flex-col items-center justify-center flex lg:flex-row lg:w-[77%] lg:gap-[6rem] max-w-[1320px] 3xl:w-[66%]">
                 <div className="info_container">
                 <div className="relative"><Lottie autoPlay={true} loop={true} animationData={infoAData} className="w-[130px] lg:w-[150px] xl:w-[200px] 3xl:w-[230px] h-auto"/></div>
 
