@@ -21,8 +21,8 @@ const Contact = () => {
 
             <form className="mt-6 flex flex-col">
                 <div className="flex justify-between gap-4">
-                    <input type="text" name="name" placeholder="name" className="input-box w-[9.5rem] sm:w-[14rem] md:w-[16rem] lg:w-[11rem] xl:w-[13rem] lg:mb-2 2xl:w-[15rem] 2xl:mb-4" maxLength={50} value={name} onChange={e => setName(e.target.value)}/>
-                    <input type="text" name="phone" placeholder="phone" className="input-box w-[9.5rem] sm:w-[14rem] md:w-[16rem] lg:w-[11rem] xl:w-[13rem] lg:mb-2 2xl:w-[15rem] 2xl:mb-4" maxLength={13} value={phone} onChange={e => setPhone(e.target.value)}/>
+                    <input type="text" name="name" placeholder="name" className="input-box box_sizing" maxLength={50} value={name} onChange={e => setName(e.target.value)}/>
+                    <input type="text" name="phone" placeholder="phone" className="input-box box_sizing" maxLength={13} value={phone} onChange={e => setPhone(e.target.value)}/>
                 </div>
 
                 <input type="text" name="email" placeholder="email" className="input-box w-full mt-4" maxLength={60} value={email} onChange={e => setEmail(e.target.value)}/>

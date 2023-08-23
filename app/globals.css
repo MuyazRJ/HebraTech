@@ -147,3 +147,7 @@
 .info_line {
   @apply before:inset-0 before:h-[full] before:border-l-[1px] before:border-white before:absolute before:top-[1.7rem] relative before:translate-x-[-30px] before:hidden lg:before:block flex flex-col;
 }
+
+.box_sizing {
+  @apply w-[9.5rem] sm:w-[14rem] md:w-[16rem] lg:w-[11rem] xl:w-[13rem] lg:mb-2 2xl:w-[15rem] 2xl:mb-4;
+}
