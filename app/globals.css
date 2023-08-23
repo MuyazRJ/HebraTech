@@ -89,11 +89,11 @@
 }
 
 .input-box {
-  @apply rounded-full h-[2.25rem] text-center bg-main-black text-white placeholder:text-white;
+  @apply rounded-full h-[2.25rem] text-center bg-main-black text-white placeholder:text-white 2xl:h-12 2xl:text-lg;
 }
 
 .marquee {
-  @apply text-white flex-shrink-0 justify-around min-w-full gap-[1rem] animate-infiniteScroll text-8xl font-bold tracking-normal;
+  @apply text-white flex-shrink-0 justify-around min-w-full gap-[1rem] animate-infiniteScroll text-8xl font-bold tracking-normal lg:text-9xl xl:text-[9rem] 3xl:text-[11rem];
 }
 
 .nav-button {
@@ -133,7 +133,7 @@
 }
 
 .info_t {
-  @apply text-white font-semibold text-xl mt-6 md:text-2xl lg:text-2xl lg:self-start mb-2 3xl:text-3xl;
+  @apply text-white font-semibold text-xl mt-6 md:text-2xl lg:text-2xl lg:self-start mb-2 3xl:text-3xl self-center;
 }
 
 .info_s {
@@ -141,5 +141,9 @@
 }
 
 .info_container {
-  @apply flex flex-col items-center max-w-[85%] before:inset-0 before:h-[17rem] before:border-l-[1px] before:border-white before:absolute relative before:top-[11rem] before:translate-x-[-32px] before:hidden lg:before:block xl:before:top-[14rem] 3xl:before:h-[16.9rem] 3xl:before:top-[16.1rem] 2xl:before:top-[13.5rem];
+  @apply flex flex-col items-center w-[85%];
+}
+
+.info_line {
+  @apply before:inset-0 before:h-[full] before:border-l-[1px] before:border-white before:absolute before:top-[1.7rem] relative before:translate-x-[-30px] before:hidden lg:before:block flex flex-col;
 }
