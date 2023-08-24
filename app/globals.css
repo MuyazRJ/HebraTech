@@ -150,3 +150,7 @@
 .box_sizing {
   @apply w-[9.5rem] sm:w-[14rem] md:w-[16rem] lg:w-[11rem] xl:w-[13rem] lg:mb-2 2xl:w-[15rem] 2xl:mb-4;
 }
+
+.founder_image {
+  @apply cursor-pointer w-[80px] h-[80px] relative overflow-hidden before:absolute before:inset-0 before:bg-[#FFBB37] before:rounded-full before:w-[74px] before:h-[74px] before:top-[0.05rem] before:left-[0.2rem] before:hover:opacity-100 before:duration-300
+}

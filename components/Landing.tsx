@@ -42,7 +42,7 @@ const Landing = ({ landing }: { landing: boolean }) => {
     }
 
     return ( 
-        <motion.div key="landing" className={`bg-main-black overflow-hidden origin-top relative xl:pt-10 ${landing ? '': 'pb-20'}`} initial={{opacity:0}} animate={{opacity:1}} transition={{duration:.75}}>
+        <motion.div key="landing" className={`bg-main-black overflow-hidden origin-top relative xl:pt-10 ${landing ? '': 'pb-28'}`} initial={{opacity:0}} animate={{opacity:1}} transition={{duration:.75}}>
             <div className="relative mx-auto max-w-[1920px]">
 
                 <div className="circle-glow z-[1]"></div>
