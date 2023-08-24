@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const Hexagon = ({ imgPath, alt, size, click, currentMember, memberNumber }: { imgPath: string, alt: string, size: string, click:any, currentMember: number, memberNumber: number}) => {
     return ( 
-        <div className={`w-[${size}px] h-[${size}px] relative overflow-hidden group`} onClick={click}>
+        <div className={`w-[${size}px] h-[${size}px] relative group overflow-hidden`} onClick={click}>
             <Image
                 src="/hexagon.png"
                 alt={alt}
