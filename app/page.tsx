@@ -27,7 +27,7 @@ export default function Home() {
         {enterLanding && 
         <>
         <Navbar/>
-        <Landing key="landing"/>
+        <Landing landing={true}/>
         <Brief/>
         <FoundersLanding/>
         <InfoLanding/>

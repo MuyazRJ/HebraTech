@@ -7,6 +7,7 @@ import FoundersLanding from './FoundersLanding'
 import InfoLanding from './InfoLanding'
 import Contact from './Contact'
 import Footer from './Footer'
+import Founders from "./Founders";
 
 export {
     Preloader,
@@ -18,5 +19,6 @@ export {
     InfoLanding,
     Contact,
     Footer,
-
+    Founders,
+    
 }
