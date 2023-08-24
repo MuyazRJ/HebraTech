@@ -1,4 +1,4 @@
-import { Founders, Landing, Navbar } from "@/components";
+import { Founders, Landing, Navbar, Team } from "@/components";
 
 const about = () => {
     return ( 
@@ -6,6 +6,7 @@ const about = () => {
             <Navbar/>
             <Landing landing={false}/>
             <Founders/>
+            <Team/>
         </main>
      );
 }

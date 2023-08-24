@@ -3,6 +3,7 @@
 import Image from "next/image";
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence, easeOut } from "framer-motion"
+import TextReveal from "@/motion/Reveal";
 
 const Founders = () => {
     const [founder, setFounder] = useState(1)
@@ -55,8 +56,12 @@ const Founders = () => {
     }, [founder])
 
     return ( 
-        <div className="h-screen w-screen bg-main-black">
-            <h2 className="text-white md:text-3xl w-[56%] mx-auto z-[1] text-2xl 2xl:text-8xl lg:text-7xl lg:text-[4.3rem] font-semibold text-center mb-12 before:absolute relative before:border-b-[1px] before:border-[#A3A3A3] before:w-[110%] before:right-[-5%] before:top-10 before:bottom-0 before:opacity-50 lg:before:hidden">OUR FOUNDERS</h2> 
+        <div className="bg-main-black pb-12">
+            <TextReveal>
+                <div className="flex justify-center">
+                <h2 className="text-white text-3xl 2xl:text-8xl lg:text-7xl lg:text-[4.3rem] font-semibold text-center mb-10 before:absolute relative before:border-b-[1px] before:border-[#A3A3A3] before:w-[110%] before:right-[-5%] before:top-10 before:bottom-0 before:opacity-50 lg:before:hidden">OUR FOUNDERS</h2></div>
+            </TextReveal>
+            
             <div className="flex w-[84%] mx-auto relative overflow-y-hidden">
                 <div className="flex flex-col items-center gap-1">
                     <div className={`founder_image ${founder === 1 ? 'before:opacity-100': 'before:opacity-0'}`} onClick={() => setFounder(1)}>
@@ -96,14 +101,13 @@ const Founders = () => {
                     </div>
                 </div>
 
-                <div className="border-l-[2.7px] border-main-gold ml-[1.2rem] mt-2 overflow-hidden relative">
+                <div className="border-l-[2.7px] border-main-gold ml-[1.2rem] mt-2 overflow-hidden relative mb-2">
                     <AnimatePresence mode="wait">
                         {<motion.h2 initial="initial" animate="animation" exit="exit" key={founder} variants={pAnim} className="text-white font-semibold pl-[0.4rem] font-[jost] -translate-y-0.5 tracking-normal text-sm">{currentFounderName}</motion.h2>}
                     </AnimatePresence>
                     <AnimatePresence mode="wait">
                         {<motion.p initial="initial" animate="animation" exit="exit" key={founder} variants={pAnim} className="text-[#E1E1E1] mt-1 font-[jost] text-xs pl-[0.4rem] tracking-normal font-[500] overflow-hidden">{currentPara}</motion.p>}
                     </AnimatePresence>
-
                 </div>
             </div>
         </div>

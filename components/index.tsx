@@ -8,6 +8,8 @@ import InfoLanding from './InfoLanding'
 import Contact from './Contact'
 import Footer from './Footer'
 import Founders from "./Founders";
+import Team from "./Team";
+import Hexagon from "./Hexagon";
 
 export {
     Preloader,
@@ -20,5 +22,6 @@ export {
     Contact,
     Footer,
     Founders,
-    
+    Team,
+    Hexagon
 }
