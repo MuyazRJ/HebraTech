@@ -6,7 +6,7 @@ import { motion, AnimatePresence, easeOut } from "framer-motion"
 import TextReveal from "@/motion/Reveal";
 
 const Founders = () => {
-    const [founder, setFounder] = useState(1)
+    const [founder, setFounder] = useState(2)
     const [currentPara, setP] = useState('')
     const [currentFounderName, setFounderName] = useState('')
 
@@ -64,18 +64,18 @@ const Founders = () => {
             
             <div className="flex w-[84%] mx-auto relative overflow-y-hidden">
                 <div className="flex flex-col items-center gap-1">
-                    <div className={`founder_image ${founder === 1 ? 'before:opacity-100': 'before:opacity-0'}`} onClick={() => setFounder(1)}>
+                    <div className={`founder_image ${founder === 2 ? 'before:opacity-100': 'before:opacity-0'} `} onClick={() => setFounder(2)}>
                         <Image
-                            src="/4.png"
+                            src="/SUNSHINE_WEBB_BRAZELTON_HebraTech.png"
                             alt='Founder Anthony Hester'
                             fill={true}
                             className='object-contain'
                         />
                     </div>
 
-                    <div className={`founder_image ${founder === 2 ? 'before:opacity-100': 'before:opacity-0'} `} onClick={() => setFounder(2)}>
+                    <div className={`founder_image ${founder === 1 ? 'before:opacity-100': 'before:opacity-0'}`} onClick={() => setFounder(1)}>
                         <Image
-                            src="/SUNSHINE_WEBB_BRAZELTON_HebraTech.png"
+                            src="/4.png"
                             alt='Founder Anthony Hester'
                             fill={true}
                             className='object-contain'

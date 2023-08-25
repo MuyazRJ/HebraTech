@@ -1,4 +1,4 @@
-import { Founders, Landing, Navbar, Team } from "@/components";
+import { Contact, Footer, Founders, Landing, Navbar, Team } from "@/components";
 
 const about = () => {
     return ( 
@@ -7,6 +7,8 @@ const about = () => {
             <Landing landing={false}/>
             <Founders/>
             <Team/>
+            <Contact/>
+            <Footer/>
         </main>
      );
 }
