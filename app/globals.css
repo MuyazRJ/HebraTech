@@ -44,7 +44,7 @@
 }
 
 .circle-glow {
-  @apply rounded-full w-[1px] h-[1px] mr-8 absolute overflow-hidden lg:hidden -translate-y-[7.5rem];
+  @apply rounded-full w-[1px] h-[1px] mr-8 absolute overflow-hidden lg:hidden -translate-y-[.5rem];
   box-shadow: 0 0 13.5em 4.2em #FFB800;
 }
 
@@ -152,5 +152,21 @@
 }
 
 .founder_image {
-  @apply cursor-pointer w-[80px] h-[80px] relative overflow-hidden before:absolute before:inset-0 before:bg-[#FFBB37] before:rounded-full before:w-[74px] before:h-[74px] before:top-[0.05rem] before:left-[0.2rem] before:hover:opacity-100 before:duration-300
+  @apply cursor-pointer w-[80px] h-[80px] sm:w-[100px] sm:h-[100px] relative overflow-hidden before:absolute before:inset-0 before:bg-[#FFBB37] lg:before:hidden lg:cursor-auto before:rounded-full before:w-[74px] before:h-[76px] before:left-[0.2rem] before:hover:opacity-100 before:duration-300 sm:before:w-[93px] sm:before:h-[92px] sm:before:top-[0.05rem] md:min-w-[120px] md:min-h-[120px] md:before:w-[113px] md:before:h-[110px] md:before:top-[0.1rem] lg:min-w-[140px] lg:min-h-[140px] ;
+}
+
+.founders_text {
+  @apply text-white text-3xl md:text-4xl 2xl:text-8xl lg:text-7xl lg:text-[4.3rem] font-semibold text-center mb-8 2xl:pb-10 before:absolute relative before:border-b-[1px] before:border-[#A3A3A3] before:w-[110%] before:right-[-5%] before:top-10 md:before:top-12 before:bottom-0 before:opacity-50 lg:before:hidden;
+}
+
+.founders_container {
+  @apply border-l-[4.5px] border-main-gold ml-[1rem] hidden lg:block min-h-full;
+}
+
+.large_founder_name {
+  @apply text-white font-[jost] text-lg font-semibold ml-2 3xl:text-xl;
+}
+
+.large_founder_desc {
+  @apply text-[#E1E1E1] font-[jost] text-base ml-2 3xl:text-lg;
 }

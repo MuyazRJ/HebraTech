@@ -42,17 +42,17 @@ const Landing = ({ landing }: { landing: boolean }) => {
     }
 
     return ( 
-        <motion.div key="landing" className={`bg-main-black overflow-hidden origin-top relative xl:pt-10 ${landing ? '': 'pb-[6.5rem]'}`} initial={{opacity:0}} animate={{opacity:1}} transition={{duration:.75}}>
+        <motion.div key="landing" className={`bg-main-black relative xl:pt-10 ${landing ? '': 'pb-[5rem] md:pb-28 lg:pb-36 2xl:pb-[20rem]'}`} initial={{opacity:0}} animate={{opacity:1}} transition={{duration:.75}}>
             <div className="relative mx-auto max-w-[1920px]">
 
                 <div className="circle-glow z-[1]"></div>
-                <div className="circle-glow-large z-[1] right-0 translate-x-[-255px] translate-y-[55px] lg:block hidden 2xl:translate-x-[-365px] 2xl:translate-y-[100px]"></div>
+                <div className="circle-glow-large z-[1] right-0 translate-x-[-240px] translate-y-[195px] lg:block hidden 2xl:translate-x-[-380px] 2xl:translate-y-[266px] xl:translate-x-[-270px]"></div>
 
-                <div className="absolute top-0 translate-y-[-290px] translate-x-4 sm:translate-x-[20%] sm:right-0 md:translate-y-[-385px] lg:translate-y-[-420px] xl:translate-y-[-480px] 2xl:translate-x-[15%]">
+                <div className="absolute top-0 translate-y-[-178px] translate-x-4 sm:translate-x-[20%] sm:right-0 md:translate-y-[-272px] lg:translate-y-[-267px] xl:translate-y-[-327px] 2xl:translate-x-[15%]">
                     <Lottie autoPlay={true} loop={true} animationData={animationData} className="w-[690px] h-[640px] md:w-[800px] md:h-auto lg:w-[930px] xl:w-[1100px] 2xl:w-[1200px]"/>
                 </div>
 
-                <div className="w-[85%] 3xl:w-[75%] flex flex-col mt-[7rem] mx-auto lg:mt-[9.5rem]">
+                <div className="w-[85%] 3xl:w-[75%] flex flex-col pt-[7rem] mx-auto lg:pt-[9.5rem]">
                     <div className="circle-glow-large-left z-[1] xl:translate-x-[20px] xl:translate-y-[-120px] lg:translate-x-0"/>
                     <h1 className="text-white text-[2.7rem] leading-[3.4rem] font-semibold tracking-tight z-[1] md:text-[3.2rem] md:tracking-normal lg:text-6xl lg:text-[4.1rem] lg:w-[77%] xl:text-[4.7rem] xl:w-[85%] 2xl:text-[5.7rem]">{landing ? <>Revolutionising<br/>Computers</> : <>Who are we?</>}</h1>
                     <p className="text-[#C3C3C3] mt-6 text-md font-semibold z-[1] md:w-[600px] md:text-lg xl:text-xl lg:mt-10 2xl:mt-12">{landing ? landingP: landingA}</p>
