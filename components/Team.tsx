@@ -5,6 +5,7 @@ import { motion, AnimatePresence, easeOut } from "framer-motion"
 import { useState, useEffect } from "react";
 import { Hexagon } from ".";
 import { membersData } from "./data";
+import Image from "next/image";
 
 const Team = () => {
     const [member, setMember] = useState(4)
@@ -42,10 +43,12 @@ const Team = () => {
     return ( 
         <div className="bg-main-black pb-10">
             <TextReveal>
-                <div className="flex justify-center"><h2 className="founders_text">KEY TEAM MEMBERS</h2></div>
+                <div className="flex justify-center"><h2 className="founders_text z-[32]">KEY TEAM MEMBERS</h2></div>
             </TextReveal>
 
-            <div className="flex flex-col justify-center w-[90%] mx-auto items-center">
+            <div className="flex flex-col justify-center w-[90%] mx-auto items-center mt-8">
+ 
+
                 <div className="w-[120vw] relative">
                     <div className="w-full h-[0.1px] bg-main-gold absolute translate-y-[13.5rem] rotate-[29deg] bg-gradient-to-r from-[#FFA800] to-[#FFB800] opacity-80"/>
                     <div className="w-full h-[0.1px] bg-main-gold absolute translate-y-[7.5rem] rotate-[29deg] opacity-30"/>
@@ -72,7 +75,7 @@ const Team = () => {
                     <Hexagon imgPath="BOBBY_DENEEFE_Financial_Advisor_and_Board_Member.png" size="100" alt="BOBBY DENEEFE" click={() => setMember(7)} currentMember={member} memberNumber={7}/>
                 </div>
 
-                <div className="border-l-[3.5px] border-main-gold ml-[1.2rem] mt-14 overflow-x-hidden relative mb-2">
+                <div className="border-l-[3.5px] border-main-gold ml-[1.2rem] mt-10 overflow-x-hidden relative mb-2">
                     <AnimatePresence mode="wait">
                         {<motion.h2 initial="initial" animate="animation" exit="exit" key={member} variants={pAnim} className="text-white font-semibold pl-[0.4rem] font-[jost] -translate-y-0.5 tracking-normal text-sm">{currentMemberName}</motion.h2>}
                     </AnimatePresence>
