@@ -2,12 +2,11 @@ import Image from "next/image";
 
 const Hexagon = ({ imgPath, alt, size="100", click, currentMember, memberNumber }: { imgPath: string, alt: string, size: string, click:any, currentMember: number, memberNumber: number}) => {
     return ( 
-        <div className={`relative group overflow-hidden`} onClick={click}>
+        <div className={`relative group overflow-hidden w-[100px] h-[100px] sm:w-[120px] sm:h-[120px] md:w-[130px] md:h-[130px] lg:w-[140px] lg:h-[140px] xl:w-[155px] xl:h-[155px] 2xl:w-[185px] 2xl:h-[185px]`} onClick={click}>
             <Image
                 src="/hexagon.png"
                 alt={alt}
-                height={Number(size)}
-                width={Number(size)}
+                fill={true}
                 className='object-contain duration-300 opacity-100 group-hover:opacity-0'
             />
 

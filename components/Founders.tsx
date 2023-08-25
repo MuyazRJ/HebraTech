@@ -49,7 +49,7 @@ const Founders = () => {
             <div className="flex w-[85%] mx-auto relative overflow-y-hidden max-w-[1440px] mt-10 3xl:w-[75%] lg:pb-12">
                 <div className="flex flex-col items-center gap-1 lg:items-start lg:gap-10">
                     <div className="flex items-center">
-                        <div className={`founder_image ${founder === 2 ? 'before:opacity-100': 'before:opacity-0'} `} onClick={() => setFounder(2)}>
+                        <div className={`founder_image ${founder === 2 ? 'before:opacity-100': 'before:opacity-0'}`} onClick={() => setFounder(2)}>
                             <Image
                                 src="/SUNSHINE_WEBB_BRAZELTON_HebraTech.png"
                                 alt='Founder Anthony Hester'
@@ -86,7 +86,7 @@ const Founders = () => {
                                 src="/STACY_BRAZELTON_Founder_HebraTech.png"
                                 alt='Founder Anthony Hester'
                                 fill={true}
-                                className='object-contain'
+                                className='object-contain '
                             />
                         </div>
 
@@ -96,13 +96,13 @@ const Founders = () => {
                         </div>
                     </div>
 
-                    <div className="flex items-center">
-                        <div className={`founder_image ${founder === 4 ? 'before:opacity-100': 'before:opacity-0'}`} onClick={() => setFounder(4)}>
+                    <div className="flex items-center bg-main-black z-[1]">
+                        <div className={`founder_image ${founder === 4 ? 'before:opacity-100': 'before:opacity-0'} z-[1]`} onClick={() => setFounder(4)}>
                             <Image
                                 src="/CHARIES_HESTER_PhD_Founder_HebraTech.png"
                                 alt='Founder Anthony Hester'
                                 fill={true}
-                                className='object-contain'
+                                className='object-contain bg-main-black'
                             />
                         </div>
 

@@ -1,7 +1,7 @@
 "use client"
 
 import React, { useRef } from "react";
-import { easeIn, easeInOut, easeOut, motion, useInView } from 'framer-motion';
+import { motion, useInView } from 'framer-motion';
 
 interface Props {
     children: JSX.Element | string,
@@ -12,7 +12,7 @@ interface Props {
 
 const TextReveal = ({ children, delay, duration = 0.55, styles='' }: Props) => {
     const ref = useRef(null);
-    const isInView = useInView(ref, { once: false })
+    const isInView = useInView(ref, { once: true })
 
     return (
         <motion.div ref={ref} animate={isInView ? "visible" : "hidden"}  className={styles}
