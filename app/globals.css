@@ -156,7 +156,7 @@
 }
 
 .founders_text {
-  @apply text-white text-3xl md:text-4xl 2xl:text-8xl lg:text-7xl lg:text-[4.3rem] font-semibold text-center sm:mb-8 before:absolute relative before:border-b-[1px] before:border-[#A3A3A3] before:w-[110%] before:right-[-5%] before:top-10 md:before:top-12 before:bottom-0 before:opacity-50 lg:before:hidden;
+  @apply text-white text-3xl md:text-4xl 2xl:text-8xl lg:text-7xl lg:text-[4.3rem] font-semibold text-center sm:mb-2 before:absolute relative before:border-b-[1px] before:border-[#A3A3A3] before:w-[110%] before:right-[-5%] before:top-10 md:before:top-12 before:bottom-0 before:opacity-50 lg:before:hidden;
 }
 
 .founders_container {
