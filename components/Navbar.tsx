@@ -67,8 +67,10 @@ const Navbar = ({ landing }: { landing: boolean }) => {
                    
                     <ul className='gap-14 hidden lg:flex lg:flex-1 justify-center'>
                         {landing && <li className='nav-button'><Link href="/about">About Us</Link></li>}
+                        {landing && <li className='nav-button'><Link href="/about">Our Team</Link></li>}
+
                         {!landing && <li className='nav-button'><ScrollLink to='landing' smooth={true}>About Us</ScrollLink></li>}
-                        <ScrollLink to="team" smooth={true} offset={-120}><li className='nav-button'>Our Team</li></ScrollLink>
+                        {!landing && <ScrollLink to="team" smooth={true} offset={-120}><li className='nav-button'>Our Team</li></ScrollLink>}
                     </ul>
 
                     <div className='hidden lg:flex-1 lg:flex items-end justify-end lg:mr-2'>
@@ -89,9 +91,12 @@ const Navbar = ({ landing }: { landing: boolean }) => {
                     <AnimatePresence mode='wait'>
                         {menuIsOpen && (
                             <motion.div key="b-menu" className='absolute h-screen w-screen bg-main-black inset-0 flex justify-center items-center flex-col gap-6 top-0' variants={menuAnim} initial="initial" animate="animate" exit="exit">
-                                <span className='burger-menu-text'>Home</span>
-                                <span className='burger-menu-text'>Our Team</span>
-                                <span className='burger-menu-text'>About Us</span>
+                                {landing && <ScrollLink to='landing' smooth={true}><span className='burger-menu-text' onClick={handleClick}>Home</span></ScrollLink>}
+                                {!landing && <Link href='/' onClick={handleClick}><span className='burger-menu-text'>Home</span></Link>}
+                                {!landing && <ScrollLink to='team' onClick={handleClick} smooth={true}><span className='burger-menu-text'>Our Team</span></ScrollLink>}
+                                {landing && <Link href='/about' onClick={handleClick}><span className='burger-menu-text'>Our Team</span></Link>}
+                                {!landing && <ScrollLink to='landing' onClick={handleClick} smooth={true}><span className='burger-menu-text'>About Us</span></ScrollLink>}
+                                {landing && <Link href='/about' onClick={handleClick}><span className='burger-menu-text'>About Us</span></Link>}
                             </motion.div>
                         )}
                     </AnimatePresence>

@@ -16,7 +16,7 @@ const Preloader = ({ loading }: { loading: boolean }) => {
 
     const letterAnimation = {
         initial: {
-            y: 210
+            y: '200%'
         },
         animate: {
             y: 0,
@@ -43,11 +43,11 @@ const Preloader = ({ loading }: { loading: boolean }) => {
     return ( 
         <>
             <div className={`h-screen w-screen absolute -z-10 duration-[400ms] ${loading ? 'bg-[#F3BF28]': 'bg-main-black'}`}>
-                <div className="w-full h-full flex items-center">
+                <div className="w-full h-full flex items-center relative">
                     <div className="overflow-y-hidden mx-auto">
                         <motion.span variants={stagger} initial="initial" animate="animate" className="flex relative pb-20" key="let">
                             {Array.from(title).map((letter, index) => (
-                                <motion.span key={index} variants={letterAnimation} className={`font-semibold text-[6.4rem] tracking-normal overflow-x-hidden ${loading ? 'text-black': 'text-[#F3BF28]'}`} >{letter}</motion.span>
+                                <motion.span key={index} variants={letterAnimation} className={`font-semibold text-[6.4rem] md:text-[15vw] tracking-normal overflow-hidden ${loading ? 'text-black': 'text-[#F3BF28]'}`} >{letter}</motion.span>
                             ))}
                         </motion.span>
                     </div>

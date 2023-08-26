@@ -1,28 +1,35 @@
 "use client"
 
 import { Landing, Navbar, Preloader, Brief, FoundersLanding, InfoLanding, Contact, Footer } from '@/components'
-import { useState } from 'react'
+import { PreloaderStates } from '@/context/PreloadState'
+import { useState, useEffect } from 'react'
 
 export default function Home() {
   const [loading, isLoading] = useState(true)
-  const [doneLoading, isDoneLoading] = useState(false)
   const [enterLanding, setEnterLanding] = useState(false)
+  const { doneLoadingPre, setDoneLoadingPre } = PreloaderStates()
 
-  setTimeout(() => {
-    isLoading(false)
-
-    setTimeout(() => {
-      setEnterLanding(true)
-
+  useEffect(() => {
+    if (!doneLoadingPre){
       setTimeout(() => {
-        isDoneLoading(true)
-      }, 1000)
-    }, 1350)
-  }, 2000)
+        isLoading(false)
+    
+        setTimeout(() => {
+          setEnterLanding(true)
+    
+          setTimeout(() => {
+            setDoneLoadingPre(true)
+          }, 1000)
+        }, 1350)
+      }, 2000)
+    } else {
+      setEnterLanding(true)
+    }
+  }, [])
 
   return (
     <main className='overflow-hidden'>
-        {!doneLoading && <Preloader key="preloader" loading={loading}/>}
+        {!doneLoadingPre && <Preloader key="preloader" loading={loading}/>}
         
         {enterLanding && 
         <>
