@@ -40,7 +40,7 @@ const Founders = () => {
     }, [founder])
 
     return ( 
-        <div className="bg-main-black pb-12">
+        <div className="bg-main-black pb-12" id="founders">
             <TextReveal>
                 <div className="flex justify-center">
                 <h2 className="founders_text">OUR FOUNDERS</h2></div>

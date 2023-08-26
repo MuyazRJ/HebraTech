@@ -96,7 +96,7 @@
 }
 
 .nav-button {
-  @apply text-white;
+  @apply text-white cursor-pointer before:absolute relative before:inset-0 before:-z-[1] before:border-b-2 before:border-white before:scale-x-0 before:hover:scale-x-100 before:duration-300 before:origin-left;
 }
 
 .logo {

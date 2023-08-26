@@ -41,12 +41,12 @@ const Team = () => {
     }, [member])
 
     return ( 
-        <div className="bg-main-black pb-10 relative">
+        <div className="bg-main-black pb-10 relative" id="team">
             <TextReveal>
                 <div className="flex justify-center z-10"><h2 className="founders_text z-10">KEY TEAM MEMBERS</h2></div>
             </TextReveal>
 
-            <div className="flex flex-col w-[85%] 3xl:w-[75%] mx-auto mt-8 max-w-[1440px]">
+            <div className="flex flex-col w-[85%] 3xl:w-[75%] mx-auto mt-8 max-w-[1440px]" id="team2">
                 <div className="flex flex-col items-center relative">
                     <div className="absolute">
                         <div className="relative 2xl:translate-x-[-20px] w-[550px] h-[550px] sm:w-[500px] sm:h-[510px] md:w-[680px] md:h-[670px] translate-y-[-80px] lg:w-[870px] lg:h-[870px] lg:translate-y-[-170px] xl:w-[1070px] xl:h-[1070px] xl:translate-y-[-250px] 2xl:w-[1320px] 2xl:h-[1320px] 2xl:translate-y-[-330px] xl:opacity-80">

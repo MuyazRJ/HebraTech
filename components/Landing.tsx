@@ -5,6 +5,7 @@ import { CustomButton } from ".";
 import { useState, useEffect } from "react";
 import Lottie, { LottieRefCurrentProps } from "lottie-react";
 import animationData  from '../animations/orbit.json'
+import { Link as ScrollLink } from "react-scroll/modules";
 
 const Landing = ({ landing }: { landing: boolean }) => {
     const landingA = 'HeBra Technologies is at the forefront of a technological revolution, harnessing the power of photons to reshape the landscape of computing and communication.'
@@ -42,7 +43,7 @@ const Landing = ({ landing }: { landing: boolean }) => {
     }
 
     return ( 
-        <motion.div key="landing" className={`bg-main-black relative xl:pt-10 ${landing ? '': 'pb-[5rem] md:pb-28 lg:pb-36 2xl:pb-[20rem]'}`} initial={{opacity:0}} animate={{opacity:1}} transition={{duration:.75}}>
+        <motion.div key="landing" className={`bg-main-black relative xl:pt-10 ${landing ? '': 'pb-[5rem] md:pb-28 lg:pb-36 2xl:pb-[20rem]'}`} initial={{opacity:0}} animate={{opacity:1}} transition={{duration:.75}} id="landing">
             <div className="relative mx-auto max-w-[1920px]">
 
                 <div className="circle-glow z-[1]"></div>
@@ -56,8 +57,11 @@ const Landing = ({ landing }: { landing: boolean }) => {
                     <div className="circle-glow-large-left z-[1] xl:translate-x-[20px] xl:translate-y-[-120px] lg:translate-x-0"/>
                     <h1 className="text-white text-[2.7rem] leading-[3.4rem] font-semibold tracking-tight z-[1] md:text-[3.2rem] md:tracking-normal lg:text-6xl lg:text-[4.1rem] lg:w-[77%] xl:text-[4.7rem] xl:w-[85%] 2xl:text-[5.7rem]">{landing ? <>Revolutionising<br/>Computers</> : <>Who are we?</>}</h1>
                     <p className="text-[#C3C3C3] mt-6 text-md font-semibold z-[1] md:w-[600px] md:text-lg xl:text-xl lg:mt-10 2xl:mt-12">{landing ? landingP: landingA}</p>
-                    <span><CustomButton text={landing ? "Learn More": "Our Team"} styles="mt-12 lg:hidden" boxShadow="0 0 7em 0 #FFB800"/></span>
-                    <span><CustomButton text={landing ? "Learn More": "Our Team"} styles="mt-12 2xl:mt-14 lg:flex hidden" boxShadow="0 0 6em -0.6em #FFB800"/></span>
+
+                    <ScrollLink to={`${landing ? 'brief': 'founders'}`} smooth={true} offset={-120}>
+                        <span><CustomButton text={landing ? "Learn More": "Our Team"} styles="mt-12 lg:hidden" boxShadow="0 0 7em 0 #FFB800"/></span>
+                        <span><CustomButton text={landing ? "Learn More": "Our Team"} styles="mt-12 2xl:mt-14 lg:flex hidden" boxShadow="0 0 6em -0.6em #FFB800"/></span>
+                    </ScrollLink>
                     
                     {landing &&
                     <>

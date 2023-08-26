@@ -4,6 +4,7 @@ import Image from "next/image";
 import Lottie, { LottieRefCurrentProps } from "lottie-react";
 import infoAData  from '../animations/new_age_of_computing_4.json'
 import infoSData  from '../animations/super_communications.json'
+import Link from "next/link";
 
 const InfoLanding = () => {
     return ( 
@@ -19,7 +20,7 @@ const InfoLanding = () => {
                     <p className="info_p">The quantum-powered computing devices offer exceptional capabilities, including the equivalent of 2 million qubits and operating speeds hundreds of millions of times faster than traditional computing. These devices generate no heat and address the limitations of digital computing, providing a solution to the growing computational power crisis.</p>
                     
                     <button type="button" className="radial mt-8 self-start" >
-                        <span className="info_s">Learn More</span>
+                        <Link href="/about"><span className="info_s">Learn More</span></Link> 
                     </button>
                 </div>
                 </div>
@@ -34,7 +35,7 @@ const InfoLanding = () => {
                         <p className="info_p">On the other hand, the superpowered communication networks enable long-range laser communications that can transmit data through the atmosphere and weather. This advancement has the potential to greatly enhance and revolutionize global communication systems by significantly improving efficiency and reliability.</p>
 
                         <button type="button" className="radial mt-8 self-start" >
-                            <span className="info_s">Learn More</span>
+                           <Link href="/about"><span className="info_s">Learn More</span></Link> 
                         </button>
                     </div>
                 </div>

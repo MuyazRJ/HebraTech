@@ -1,6 +1,10 @@
-import Image from "next/image";
+"use client"
 
-const Footer = () => {
+import Image from "next/image";
+import Link from 'next/link';
+import { Link as ScrollLink } from "react-scroll/modules";
+
+const Footer = ({ landing }: { landing:boolean }) => {
     return ( 
         <div className="bg-main-black w-full pb-10 flex justify-center relative">
             <div className="absolute w-[270px] h-[270px] left-0 translate-x-[-70px] opacity-50">
@@ -20,9 +24,11 @@ const Footer = () => {
             </div>
 
                 <div className="flex flex-col gap-4 justify-center">
-                    <span className="text-white tracking-light sm:text-lg md:text-xl">Who are we?</span>
-                    <span className="text-white tracking-light sm:text-lg md:text-xl">Our Team</span>
-                    <span className="text-white tracking-light sm:text-lg md:text-xl">Contact us</span>
+                    {landing && <Link href="/about"><span className="text-white tracking-light sm:text-lg md:text-xl cursor-pointer">Who are we?</span></Link>}
+                    {!landing && <ScrollLink to="landing" smooth={true} offset={-200}><span className="text-white tracking-light sm:text-lg md:text-xl cursor-pointer">Who are we?</span></ScrollLink>}
+
+                    <ScrollLink to={`${landing ? 'founders_landing': 'founders'}`} smooth={true} offset={-200}><span className="text-white tracking-light sm:text-lg md:text-xl cursor-pointer">Our Team</span></ScrollLink>
+                    <ScrollLink to='contact' smooth={true}><span className="text-white tracking-light sm:text-lg md:text-xl cursor-pointer">Contact us</span></ScrollLink>
                 </div>
             </div>
 

@@ -26,13 +26,13 @@ export default function Home() {
         
         {enterLanding && 
         <>
-        <Navbar/>
+        <Navbar landing={true}/>
         <Landing landing={true}/>
         <Brief/>
         <FoundersLanding/>
         <InfoLanding/>
         <Contact/>
-        <Footer/>
+        <Footer landing={true}/>
         </>
         }
     </main>

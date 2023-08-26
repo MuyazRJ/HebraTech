@@ -15,10 +15,16 @@ module.exports = {
         infiniteScroll: {
           '0%': {  transform: 'translateX(0%)' },
           '100%': { transform: 'translateX(calc(-100% - 1rem))' },
-        }
+        },
+        wiggle: {
+          '0%': { transform: 'translateX(0)' },
+          '40%': { transform: 'translateX(4px)' },
+          '100%': { transform: 'translateX(-4px)' },
+        },
       },
       animation: {
-        infiniteScroll: 'infiniteScroll 13s linear infinite'
+        infiniteScroll: 'infiniteScroll 13s linear infinite',
+        wiggle: 'wiggle 0.18s 2',
       },
       screens: {
         '3xl': '1720px',
