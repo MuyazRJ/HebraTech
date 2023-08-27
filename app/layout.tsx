@@ -8,34 +8,6 @@ export const metadata: Metadata = {
 }
 
 export default function RootLayout({ children }: { children: React.ReactNode}) {
-  const enterAnim = {
-      initial:{
-        scaleY: 1
-    },
-    animate: {
-        scaleY: 0,
-        transition: {
-            duration: 0.85, ease:[0.99, 0, 0.17, 1],
-        }
-    }
-  }
-
-  const exitAnim = {
-    initial:{
-      scaleY: 0
-    },
-    animate: {
-        scaleY: 0,
-    },
-    exit: {
-      scaleY: 1,
-      transition: {
-        duration: 0.85, ease:[0.99, 0, 0.17, 1],
-    }
-    }
-}
- 
-
   return (
     <html lang="en">
         <body className='overflow-x-hidden bg-main-black'>

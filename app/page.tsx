@@ -8,7 +8,7 @@ export default function Home() {
   const [loading, isLoading] = useState(true)
   const [enterLanding, setEnterLanding] = useState(false)
   const { doneLoadingPre, setDoneLoadingPre } = PreloaderStates()
-
+  
   useEffect(() => {
     if (!doneLoadingPre){
       setTimeout(() => {
@@ -25,6 +25,8 @@ export default function Home() {
     } else {
       setEnterLanding(true)
     }
+
+  
   }, [])
 
   return (
