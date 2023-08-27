@@ -172,17 +172,5 @@
 }
 
 ::-webkit-scrollbar {
-  width: 6px;
-} 
-
-::-webkit-scrollbar-track {
-  background-color: #191919;
-} 
-
-::-webkit-scrollbar-thumb {
-  background-color: #FFFFFF;
-} 
-
-::-webkit-scrollbar-thumb:hover {
-  background-color: #F1E5AC;
+  width: 0px;
 } 

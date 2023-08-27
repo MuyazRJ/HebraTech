@@ -1,6 +1,4 @@
-"use client"
-
-import { AnimatePresence, delay, easeIn, motion } from "framer-motion"
+import { motion } from "framer-motion"
 
 const Preloader = ({ loading }: { loading: boolean }) => {
     const title = "HEBRA"
