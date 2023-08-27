@@ -75,9 +75,9 @@ const Landing = ({ landing }: { landing: boolean }) => {
                         </div>
 
                         <AnimatePresence mode="wait">
-                            {selectedStat === 0 && <motion.p key={1} variants={statsAnim} initial="initial" animate="animation" exit="exit" className="stats-p">Combined estimated market values for the top 10 applications of the first two versions of our Tech Device.</motion.p>}
-                            {selectedStat === 1 && <motion.p key={2} variants={statsAnim} initial="initial" animate="animation" exit="exit" className="stats-p">Ipsam eum consequuntur distinctio saepe provident corporis porro quasi facilis reiciendis officia dolores inventors!</motion.p>}
-                            {selectedStat === 2 && <motion.p key={3} variants={statsAnim} initial="initial" animate="animation" exit="exit" className="stats-p">Combined estimated market values for the top 10 applications of the first two versions of our Tech Device.</motion.p>}
+                            {selectedStat === 0 && <motion.p key={1} variants={statsAnim} initial="initial" animate="animation" exit="exit" className="stats-p">Gathered patents for efficient device for Optical Quantum Computing, enabling mass production And Extend Computing.</motion.p>}
+                            {selectedStat === 1 && <motion.p key={2} variants={statsAnim} initial="initial" animate="animation" exit="exit" className="stats-p">Combined estimated market values for the top 10 applications of the first two versions of our tech device </motion.p>}
+                            {selectedStat === 2 && <motion.p key={3} variants={statsAnim} initial="initial" animate="animation" exit="exit" className="stats-p">We Are far ahead of the competition, providing a unique opportunity to dominate Many  markets for years.</motion.p>}
                         </AnimatePresence>
                     </>
                     }

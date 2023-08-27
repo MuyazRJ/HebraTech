@@ -32,7 +32,7 @@
 }
 
 .statistics-text {
-  @apply flex-1 text-2xl text-[26px] md:text-[29px] lg:text-[2rem] font-semibold tracking-tight;
+  @apply flex-1 text-2xl text-[26px] md:text-[29px] lg:text-[2rem] font-semibold tracking-tight cursor-pointer;
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
