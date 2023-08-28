@@ -42,7 +42,7 @@ const Team = () => {
 
     return ( 
         <div className="bg-main-black pb-10 relative" id="team">
-            <div className="flex justify-center z-10"><h2 className="founders_text z-10">KEY TEAM MEMBERS</h2></div>
+            <div className="flex justify-center"><h2 className="founders_text z-[1]">KEY TEAM MEMBERS</h2></div>
 
             <div className="flex flex-col w-[85%] 3xl:w-[75%] mx-auto mt-8 max-w-[1440px]" id="team2">
                 <div className="flex flex-col items-center relative">

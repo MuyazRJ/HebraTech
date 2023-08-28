@@ -11,7 +11,6 @@ import { PreloaderStates } from "@/context/PreloadState";
 const Landing = ({ landing }: { landing: boolean }) => {
     const { doneLoadingPre } = PreloaderStates()
 
-    const landingA = 'HeBra Technologies is at the forefront of a technological revolution, harnessing the power of photons to reshape the landscape of computing and communication.'
     const landingP = 'Introducing the next revolution in technology: computing and communications using quantum particles.'
 
     const [selectedStat, setStat] = useState(0)
@@ -59,7 +58,8 @@ const Landing = ({ landing }: { landing: boolean }) => {
                 <div className="w-[85%] 3xl:w-[75%] flex flex-col pt-[7rem] mx-auto lg:pt-[9.5rem]">
                     <div className="circle-glow-large-left z-[1] xl:translate-x-[20px] xl:translate-y-[-120px] lg:translate-x-0"/>
                     <h1 className="text-white text-[2.7rem] leading-[3.4rem] font-semibold tracking-tight z-[1] md:text-[3.2rem] md:tracking-normal lg:text-6xl lg:text-[4.1rem] lg:w-[77%] xl:text-[4.7rem] xl:w-[85%] 2xl:text-[5.7rem]">{landing ? <>Revolutionising<br/>Computers</> : <>Who are we?</>}</h1>
-                    <p className="text-[#C3C3C3] mt-6 text-md font-semibold z-[1] md:w-[600px] md:text-lg xl:text-xl lg:mt-10 2xl:mt-12">{landing ? landingP: landingA}</p>
+                    {landing && <p className="text-[#C3C3C3] mt-6 text-md font-semibold z-[1] md:w-[600px] md:text-lg xl:text-xl lg:mt-10 2xl:mt-12 xl:w-[750px]">{landingP}</p>}
+                    {!landing && <p className="text-[#C3C3C3] mt-6 text-md font-semibold z-[1] md:w-[600px] md:text-lg xl:text-xl lg:mt-10 2xl:mt-12 xl:w-[750px]">HeBra Technologies is at the forefront of a technological revolution, harnessing the power of photons to reshape the landscape of computing and communication.<br/><br/>With a team of experts, including Anthony Hester, Dr. Charles Hester, Stacy Brazelton, and more, HeBra is advancing photon-based technology to create a future where computing is faster, communication is more efficient, and the possibilities are limitless.</p>}
 
                     <ScrollLink to={`${landing ? 'brief': 'founders'}`} smooth={true} offset={-120}>
                         <span><CustomButton text={landing ? "Learn More": "Our Team"} styles="mt-12 lg:hidden" boxShadow="0 0 7em 0 #FFB800"/></span>
