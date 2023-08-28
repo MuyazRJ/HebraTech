@@ -46,7 +46,7 @@ const Landing = ({ landing }: { landing: boolean }) => {
     }
 
     return ( 
-        <motion.div key="landing" className={`bg-main-black relative xl:pt-10 ${landing ? '': 'pb-[5rem] md:pb-28 lg:pb-36 2xl:pb-[20rem]'}`} initial={doneLoadingPre ? {}: {opacity: 0}} animate={doneLoadingPre ? {}: {opacity: 1}} transition={{duration:.75}} id="landing">
+        <motion.div key="landing" className={`bg-main-black relative xl:pt-10 ${landing ? '': 'pb-[5rem] md:pb-20 lg:pb-36 2xl:pb-[16rem]'}`} initial={doneLoadingPre ? {}: {opacity: 0}} animate={doneLoadingPre ? {}: {opacity: 1}} transition={{duration:.75}} id="landing">
             <div className="relative mx-auto max-w-[1920px]">
 
                 <div className="circle-glow z-[1]"></div>
